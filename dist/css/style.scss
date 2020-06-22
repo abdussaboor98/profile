@@ -266,21 +266,21 @@ body {
 }
 
 .text-gradient {
-    background: linear-gradient(360deg, rgb(5, 100, 105) 1%, rgba(0, 173, 181, 1) 50%, rgb(143, 13, 86) 65%, rgb(143, 58, 106) 100%);
+    // background: linear-gradient(360deg, rgb(5, 100, 105) 1%, rgba(0, 173, 181, 1) 50%, rgb(143, 13, 86) 65%, rgb(143, 58, 106) 100%);
     background-clip: text;
     color: #ffffff00;
-    // color: $color-cultured;
-    animation: text-gradient 20s ease-in-out infinite;
+    color: $color-cultured;
+    // animation: text-gradient 20s ease-in-out infinite;
 }
 
-@include keyframes(text-gradient) {
-    @for $i from 0 to 101 {
-        #{$i}% {
-            background: linear-gradient(360deg / 100 * $i, rgb(5, 100, 105) 1%, rgba(0, 173, 181, 1) 50%, rgb(143, 13, 86) 65%, rgb(143, 58, 106) 100%);
-            background-clip: text;
-        }
-    }
-}
+// @include keyframes(text-gradient) {
+//     @for $i from 0 to 101 {
+//         #{$i}% {
+//             background: linear-gradient(360deg / 100 * $i, rgb(5, 100, 105) 1%, rgba(0, 173, 181, 1) 50%, rgb(143, 13, 86) 65%, rgb(143, 58, 106) 100%);
+//             background-clip: text;
+//         }
+//     }
+// }
 
 .quote-box p {
     color: $color-verdigris;
