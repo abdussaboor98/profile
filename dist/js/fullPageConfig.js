@@ -3,7 +3,7 @@ const fp = new fullpage('#fullpage', {
     scrollHorizontally: true,
     bigSectionsDestination: 'top',
     menu: '#menu',
-    anchors: ['about', 'academics', 'projects', 'highlights'],
+    anchors: ['about', 'academics', 'skills', 'projects', 'highlights'],
     scrollOverflow: true,
     scrollOverflowReset: true,
 });

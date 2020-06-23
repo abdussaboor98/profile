@@ -68,10 +68,10 @@ body {
     overflow-x: hidden;
 }
 
-
 //Navbar
 .navbar {
     background-color: $color-back;
+    max-width: 100vw;
 
     .nav-item {
         .nav-link {
@@ -333,7 +333,7 @@ body {
     }
 }
 
-.academics {
+.academics-block {
 
     ul {
         list-style: none;
@@ -364,7 +364,7 @@ body {
                 width: 1rem;
                 border: solid 3px $color-verdigris;
                 border-radius: 50%;
-                background-color: $color-charcoal;
+                background-color: $color-verdigris;
             }
 
             &::after {
@@ -384,13 +384,53 @@ body {
 }
 
 @include media-breakpoint-down(sm) {
-    .academics {
+    .academics-block {
         ul {
             margin-left: 5rem;
 
             li {
                 h4 {
                     font-size: 1.3rem;
+                }
+            }
+        }
+    }
+}
+
+.skills-block {
+    table tbody {
+        tr td {
+            padding-left: 4rem;
+            line-height: 3rem;
+        }
+    }
+}
+
+@include media-breakpoint-down(sm) {
+    .skills-block {
+
+        table {
+
+            padding-bottom: 1rem;
+
+            tbody tr {
+                padding: 0;
+                margin-bottom: 3rem;
+
+                td {
+                    padding: 0;
+                    padding-left: 2rem;
+                    display: block;
+
+                    &:first-child {
+                        font-weight: bold;
+                        color: $color-verdigris;
+                    }
+
+                    &:last-child {
+                        padding-left: 4rem;
+                        padding-right: 1rem;
+                    }
                 }
             }
         }

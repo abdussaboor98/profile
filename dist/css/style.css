@@ -9545,6 +9545,7 @@ body {
 
 .navbar {
   background-color: #111;
+  max-width: 100vw;
 }
 
 .navbar .nav-item .nav-link:hover {
@@ -10430,28 +10431,28 @@ body {
   z-index: -1;
 }
 
-.academics ul {
+.academics-block ul {
   list-style: none;
   max-width: 100%;
   margin-left: 10rem;
 }
 
-.academics ul li {
+.academics-block ul li {
   position: relative;
   max-width: 80%;
   padding-top: 5vh;
 }
 
-.academics ul li h4 {
+.academics-block ul li h4 {
   font-size: 1.5rem;
 }
 
-.academics ul li p {
+.academics-block ul li p {
   line-height: 1rem;
   margin-bottom: 0.5rem;
 }
 
-.academics ul li::before {
+.academics-block ul li::before {
   content: "";
   position: absolute;
   left: -3rem;
@@ -10460,10 +10461,10 @@ body {
   width: 1rem;
   border: solid 3px #00ADB5;
   border-radius: 50%;
-  background-color: #393E46;
+  background-color: #00ADB5;
 }
 
-.academics ul li::after {
+.academics-block ul li::after {
   content: "";
   position: absolute;
   left: -2.58rem;
@@ -10472,16 +10473,44 @@ body {
   top: 3.8rem;
 }
 
-.academics ul li:last-child::after {
+.academics-block ul li:last-child::after {
   border: none;
 }
 
 @media (max-width: 767.98px) {
-  .academics ul {
+  .academics-block ul {
     margin-left: 5rem;
   }
-  .academics ul li h4 {
+  .academics-block ul li h4 {
     font-size: 1.3rem;
+  }
+}
+
+.skills-block table tbody tr td {
+  padding-left: 4rem;
+  line-height: 3rem;
+}
+
+@media (max-width: 767.98px) {
+  .skills-block table {
+    padding-bottom: 1rem;
+  }
+  .skills-block table tbody tr {
+    padding: 0;
+    margin-bottom: 3rem;
+  }
+  .skills-block table tbody tr td {
+    padding: 0;
+    padding-left: 2rem;
+    display: block;
+  }
+  .skills-block table tbody tr td:first-child {
+    font-weight: bold;
+    color: #00ADB5;
+  }
+  .skills-block table tbody tr td:last-child {
+    padding-left: 4rem;
+    padding-right: 1rem;
   }
 }
 /*# sourceMappingURL=style.css.map */
