@@ -5,6 +5,7 @@ $color-charcoal:#393E46;
 $color-verdigris: #00ADB5;
 $color-cultured: #EEEEEE;
 $color-violetred: #B91372;
+$color-back: #111;
 
 @mixin keyframes($animation-name) {
     @-webkit-keyframes #{$animation-name} {
@@ -51,7 +52,7 @@ $color-violetred: #B91372;
 }
 
 body {
-    background-color: $color-charcoal;
+    background-color: $color-gunmetal;
 }
 
 .poppins-font {
@@ -63,13 +64,14 @@ body {
 }
 
 #mainSection {
-    background-color: #111;
+    background-color: $color-back;
     overflow-x: hidden;
 }
 
+
 //Navbar
 .navbar {
-    background-color: #111;
+    background-color: $color-back;
 
     .nav-item {
         .nav-link {
@@ -98,8 +100,8 @@ body {
     width: 100%;
     height: 100%;
     overflow-y: hidden;
-
-    top: -1vh;
+    padding: 0;
+    bottom: 0;
 
     .circles {
         position: absolute;
@@ -198,6 +200,14 @@ body {
     }
 }
 
+@include media-breakpoint-down(sm) {
+
+    .section .container {
+        margin-top: 3vh;
+        margin-bottom: 20vh;
+    }
+}
+
 @include keyframes(animate) {
 
     0% {
@@ -207,12 +217,14 @@ body {
     }
 
     100% {
-        transform: translateY(-105vh) rotate(720deg);
+        transform: translateY(-120vh) rotate(720deg);
         opacity: 0;
         border-radius: 35%;
     }
 
 }
+
+
 
 .profile-image-wrapper {
     position: relative;
@@ -273,7 +285,6 @@ body {
 .text-gradient {
     // background: linear-gradient(360deg, rgb(5, 100, 105) 1%, rgba(0, 173, 181, 1) 50%, rgb(143, 13, 86) 65%, rgb(143, 58, 106) 100%);
     background-clip: text;
-    color: #ffffff00;
     color: $color-cultured;
     // animation: text-gradient 20s ease-in-out infinite;
 }
@@ -293,6 +304,10 @@ body {
     position: relative;
     box-sizing: content-box;
     z-index: 5;
+    text-shadow: -1px 1px 0 $color-back,
+        1px 1px 0$color-back,
+        1px -1px 0 $color-back,
+        -1px -1px 0 $color-back;
 
     &::before {
         font-family: 'Poppins';
