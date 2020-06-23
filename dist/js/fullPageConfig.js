@@ -1,5 +1,5 @@
 const fp = new fullpage('#fullpage', {
-    autoScrolling: true,
+    // autoScrolling: false,
     scrollHorizontally: true,
     bigSectionsDestination: 'top',
     menu: '#menu',

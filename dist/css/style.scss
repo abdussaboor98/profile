@@ -61,6 +61,14 @@ body {
 
 .section {
     min-height: 100vh;
+
+    &:nth-child(3) {
+        background-color: $color-back;
+    }
+
+    &:nth-child(5) {
+        background-color: $color-back;
+    }
 }
 
 #mainSection {
@@ -339,11 +347,12 @@ body {
         list-style: none;
         max-width: 100%;
         margin-left: 10rem;
+        margin-top: 5vh;
 
         li {
             position: relative;
             max-width: 80%;
-            padding-top: 5vh;
+            padding-bottom: 5vh;
 
             h4 {
                 font-size: 1.5rem;
@@ -359,11 +368,11 @@ body {
                 content: "";
                 position: absolute;
                 left: -3rem;
-                top: 3rem;
+                top: 4%;
                 height: 1rem;
                 width: 1rem;
                 border: solid 3px $color-verdigris;
-                border-radius: 50%;
+                border-radius: 20%;
                 background-color: $color-verdigris;
             }
 
@@ -373,17 +382,24 @@ body {
                 left: -2.58rem;
                 border-left: solid 3px $color-verdigris;
                 height: 100%;
-                top: 3.8rem;
+                top: 4%;
             }
 
             &:last-child::after {
                 border: none;
+                padding-bottom: 0;
             }
         }
     }
 }
 
 @include media-breakpoint-down(sm) {
+
+    .section-heading {
+        margin-top: 0.5rem;
+        margin-bottom: 0;
+    }
+
     .academics-block {
         ul {
             margin-left: 5rem;
@@ -402,6 +418,11 @@ body {
         tr td {
             padding-left: 4rem;
             line-height: 3rem;
+
+            &:first-child {
+                padding-right: 4rem;
+                border-right: solid $color-verdigris 3px;
+            }
         }
     }
 }
@@ -410,8 +431,7 @@ body {
     .skills-block {
 
         table {
-
-            padding-bottom: 1rem;
+            margin-top: 0;
 
             tbody tr {
                 padding: 0;
@@ -425,11 +445,14 @@ body {
                     &:first-child {
                         font-weight: bold;
                         color: $color-verdigris;
+                        border-right: none;
+
                     }
 
                     &:last-child {
                         padding-left: 4rem;
                         padding-right: 1rem;
+                        padding-bottom: 1.5rem;
                     }
                 }
             }
