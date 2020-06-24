@@ -393,9 +393,10 @@ body {
                         position: absolute;
                         top: 0;
                         left: 0;
-                        height: calc(100% + 2.5px);
+                        height: calc(100% + 4px);
+                        // height: 100%;
                         width: 50%;
-                        border: solid $color-verdigris;
+                        border: solid $color-verdigris 4px;
                         border-right: none;
                         border-top-left-radius: $line-radius;
                         border-bottom-left-radius: $line-radius;
@@ -423,9 +424,10 @@ body {
                         position: absolute;
                         top: 0;
                         right: 0;
-                        height: calc(100% + 3px);
+                        height: calc(100% + 4px);
+                        // height: 100%;
                         width: 50%;
-                        border: solid $color-verdigris;
+                        border: solid $color-verdigris 4px;
                         border-left: none;
                         border-top-right-radius: $line-radius;
                         border-bottom-right-radius: $line-radius;
@@ -441,7 +443,7 @@ body {
 
             &:first-child {
                 & p::before {
-                    top: calc(50% + 2.5px);
+                    top: calc(50% + 4px);
                     height: 50%;
                     border-top: none;
                 }

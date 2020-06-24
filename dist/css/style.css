@@ -10508,9 +10508,9 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  height: calc(100% + 2.5px);
+  height: calc(100% + 4px);
   width: 50%;
-  border: solid #00ADB5;
+  border: solid #00ADB5 4px;
   border-right: none;
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
@@ -10536,9 +10536,9 @@ body {
   position: absolute;
   top: 0;
   right: 0;
-  height: calc(100% + 3px);
+  height: calc(100% + 4px);
   width: 50%;
-  border: solid #00ADB5;
+  border: solid #00ADB5 4px;
   border-left: none;
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
@@ -10551,7 +10551,7 @@ body {
 }
 
 .journey-block ul li:first-child p::before {
-  top: calc(50% + 2.5px);
+  top: calc(50% + 4px);
   height: 50%;
   border-top: none;
 }
