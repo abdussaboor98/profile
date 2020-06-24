@@ -78,8 +78,22 @@ body {
 
 //Navbar
 .navbar {
-    background-color: $color-back;
-    max-width: 100vw;
+    max-height: 4rem;
+    padding: 0;
+
+    .navbar-brand {
+        margin: 0.5rem 1rem;
+
+        img {
+            height: 2rem;
+            object-fit: cover;
+        }
+    }
+
+    .navbar-toggler {
+        margin: 0.5rem 1rem;
+        border: none;
+    }
 
     .nav-item {
         .nav-link {
@@ -99,7 +113,15 @@ body {
     }
 }
 
+@include media-breakpoint-down(sm) {
+    .navbar {
+        background-color: $color-back;
+    }
 
+    .navbar-collapse {
+        background-color: $color-back;
+    }
+}
 
 //Background Animation
 
@@ -290,22 +312,6 @@ body {
     height: 7rem;
 }
 
-.text-gradient {
-    // background: linear-gradient(360deg, rgb(5, 100, 105) 1%, rgba(0, 173, 181, 1) 50%, rgb(143, 13, 86) 65%, rgb(143, 58, 106) 100%);
-    background-clip: text;
-    color: $color-cultured;
-    // animation: text-gradient 20s ease-in-out infinite;
-}
-
-// @include keyframes(text-gradient) {
-//     @for $i from 0 to 101 {
-//         #{$i}% {
-//             background: linear-gradient(360deg / 100 * $i, rgb(5, 100, 105) 1%, rgba(0, 173, 181, 1) 50%, rgb(143, 13, 86) 65%, rgb(143, 58, 106) 100%);
-//             background-clip: text;
-//         }
-//     }
-// }
-
 .quote-box p {
     color: $color-verdigris;
     font-size: 1.2rem;
@@ -341,17 +347,23 @@ body {
     }
 }
 
+.section-heading {
+    margin-top: 0.5rem;
+    margin-bottom: 0;
+    display: block;
+}
+
 .academics-block {
+    max-width: 100%;
+    margin-left: 5rem;
+    margin-top: 5vh;
 
     ul {
         list-style: none;
-        max-width: 100%;
-        margin-left: 10rem;
-        margin-top: 5vh;
 
         li {
             position: relative;
-            max-width: 80%;
+            max-width: 90%;
             padding-bottom: 5vh;
 
             h4 {
@@ -395,25 +407,18 @@ body {
 
 @include media-breakpoint-down(sm) {
 
-    .section-heading {
-        margin-top: 0.5rem;
-        margin-bottom: 0;
-    }
-
     .academics-block {
-        ul {
-            margin-left: 5rem;
 
-            li {
-                h4 {
-                    font-size: 1.3rem;
-                }
+        li {
+            h4 {
+                font-size: 1.3rem;
             }
         }
     }
 }
 
 .skills-block {
+
     table tbody {
         tr td {
             padding-left: 4rem;
@@ -457,5 +462,101 @@ body {
                 }
             }
         }
+    }
+}
+
+.projects-block {
+    max-width: 100%;
+    margin-left: 10rem;
+    margin-top: 5vh;
+
+    ul {
+        list-style: none;
+
+        li {
+            position: relative;
+            max-width: 80%;
+            padding-bottom: 2rem;
+
+            h4 {
+                font-size: 1.5rem;
+            }
+
+            p {
+                line-height: 1.2rem;
+                padding: 0;
+                margin: 0;
+                font-size: 0.8rem;
+
+                &:last-child {
+                    padding-top: 0.3rem;
+                    font-size: 1rem;
+                }
+            }
+
+            &::before {
+                content: "";
+                position: absolute;
+                left: -7rem;
+                top: 4%;
+                height: 4rem;
+                width: 4rem;
+                border: solid 3px $color-verdigris;
+                border-radius: 50%;
+                background-color: $color-gunmetal;
+                z-index: 1;
+                background-size: 1.5rem 1.5rem;
+                background-repeat: no-repeat;
+                background-position: center;
+            }
+
+            &::after {
+                content: "";
+                position: absolute;
+                left: -5rem;
+                border-left: solid 3px $color-verdigris;
+                height: 100%;
+                top: 4%;
+                z-index: -1;
+            }
+
+            &:last-child::after {
+                border: none;
+                padding-bottom: 0;
+            }
+
+            &:nth-child(1)::before {
+                background-image: url("../img/projects/patient.png");
+            }
+
+            &:nth-child(2)::before {
+                background-image: url("../img/projects/growth.png");
+            }
+
+            &:nth-child(3)::before {
+                background-image: url("../img/projects/3d.png");
+            }
+        }
+    }
+}
+
+.highlights-block {
+    ul {
+        margin-top: 2rem;
+        display: block;
+        list-style-image: url("../img/tick.png");
+        margin-left: 8rem;
+
+        li {
+            line-height: 1rem;
+            padding-top: 1rem;
+            padding-left: 10px;
+        }
+    }
+}
+
+@include media-breakpoint-down(sm) {
+    .highlights-block ul {
+        margin-left: 3rem;
     }
 }

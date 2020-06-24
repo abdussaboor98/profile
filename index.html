@@ -15,37 +15,40 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;1,300;1,400&display=swap"
         rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Palanquin:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css"
+        integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q" crossorigin="anonymous">
 </head>
 
 <body>
-    <header class="fixed-top">
-        <nav class="navbar navbar-expand-md navbar-dark">
-            <a class="navbar-brand" href="#"> Abdus Saboor </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ml-auto" id="menu">
-                    <li class="nav-item active" data-menuanchor="about">
-                        <a class="nav-link" href="#about"> About </a>
-                    </li>
-                    <li class="nav-item" data-menuanchor="academics">
-                        <a class="nav-link" href="#academics"> Academics </a>
-                    </li>
-                    <li class="nav-item" data-menuanchor="skills">
-                        <a class="nav-link" href="#skills"> Skills </a>
-                    </li>
-                    <li class="nav-item" data-menuanchor="projects">
-                        <a class="nav-link" href="#projects"> Projects </a>
-                    </li>
-                    <li class="nav-item" data-menuanchor="highlights">
-                        <a class="nav-link" href="#highlights"> Key Highlights </a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-    </header>
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top">
+        <a class="navbar-brand" href="#about">
+            <img src="./dist/img/logo.png" alt="">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <!-- <span class="navbar-toggler-icon"></span> -->
+            <i class="fas fa-chevron-down p-2" id="icon"></i>
+        </button>
+        <div class="collapse navbar-collapse text-center" id="navbarNav">
+            <ul class="navbar-nav ml-auto" id="menu">
+                <li class="nav-item active" data-menuanchor="about">
+                    <a class="nav-link" href="#about"> About </a>
+                </li>
+                <li class="nav-item" data-menuanchor="academics">
+                    <a class="nav-link" href="#academics"> Academics </a>
+                </li>
+                <li class="nav-item" data-menuanchor="skills">
+                    <a class="nav-link" href="#skills"> Skills </a>
+                </li>
+                <li class="nav-item" data-menuanchor="projects">
+                    <a class="nav-link" href="#projects"> Projects </a>
+                </li>
+                <li class="nav-item" data-menuanchor="highlights">
+                    <a class="nav-link" href="#highlights"> Key Highlights </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
 
     <div id="fullpage">
         <div class="section fp-auto-height-responsive" id="mainSection">
@@ -81,9 +84,9 @@
                         </div>
                     </div>
                     <div class="col-md-6 text-center mt-5">
-                        <div class="row mt-0 mt-md-5">
-                            <h4 class="text-light col-12 poppins-font"> I am a </h4>
-                            <h1 class="text-gradient typewriter col-12 poppins-font">
+                        <div class="row mt-0 mt-md-5 text-center text-light">
+                            <h4 class="col-12">I am a </h4>
+                            <h1 class="typewriter col-12 poppins-font">
                                 <span class="txt-type mt-5" data-wait="2000"
                                     data-words='["Full Stack Developer.","Foodie.","Tech Enthusiast."]'></span>
                             </h1>
@@ -104,51 +107,177 @@
         <div class="section">
             <div class="container mt-5 text-light">
                 <div class="row mt-5">
-                    <div class="col-md-9">
+                    <div class="col-12">
                         <div class="row">
                             <h1 class="pl-3 section-heading"> Academics </h1>
-                            <div class="academics-block">
-                                <ul class="w-100">
+                        </div>
+                        <div class="academics-block">
+                            <ul>
+                                <li>
+                                    <h4>
+                                        Bachelors of Engineering <span>(B.E.)</span> <br> Information Technology
+                                    </h4>
+                                    <p>
+                                        Osmania University
+                                    </p>
+                                    <p>
+                                        Hyderabad, India
+                                    </p>
+                                    <p>
+                                        85.89%
+                                    </p>
+                                </li>
+                                <li>
+                                    <h4>
+                                        Intermediate (10 + 2)
+                                    </h4>
+                                    <p>
+                                        Telangana Board of Intermediate Education
+                                    </p>
+                                    <p>
+                                        Hyderabad, India
+                                    </p>
+                                    <p>
+                                        94.3%
+                                    </p>
+                                </li>
+                                <li>
+                                    <h4>
+                                        10th
+                                    </h4>
+                                    <p>
+                                        CBSE
+                                    </p>
+                                    <p>
+                                        Hyderabad, India
+                                    </p>
+                                    <p>
+                                        10 GPA
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section">
+            <div class="container mt-5 text-light">
+                <div class="row mt-5">
+                    <div class="col-12">
+                        <div class="row">
+                            <h1 class="pl-3  section-heading"> Skills </h1>
+                        </div>
+                        <div class="skills-block">
+                            <table class="mt-5">
+                                <tbody>
+                                    <tr>
+                                        <td> Programming Languages </td>
+                                        <td> Java </td>
+                                    </tr>
+                                    <tr>
+                                        <td> Java Frameworks </td>
+                                        <td> Spring, Hibernate, Junit, Mockito and PowerMock </td>
+                                    </tr>
+                                    <tr>
+                                        <td> Frontend Technologies </td>
+                                        <td> HTML, CSS and JavaScript </td>
+                                    </tr>
+                                    <tr>
+                                        <td> Database </td>
+                                        <td> MySQL and basic MongoDB </td>
+                                    </tr>
+                                    <tr>
+                                        <td> Frontend Frameworks/Libraries </td>
+                                        <td> Angular 8, Bootstrap 4 </td>
+                                    </tr>
+                                    <tr>
+                                        <td> Tools and IDEs </td>
+                                        <td> Git and Maven, VSCode and Eclipse IDE </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- Healthcare Records
+        Training
+        Using Java, Spring Boot, Angular 8 amd MySQL
+
+         A portal where the admin can upload the patient data and the physician details. Others can retrieve the details
+        based on patient id. -->
+
+        <!-- Stock Market Charts
+        Training
+        Using Java, Spring Boot, Angular 8 amd MySQL
+         
+        A portal where the admin can upload the daily stock prices by submitting an excel sheet. The user can compare
+        the stock prices of different companies or the same company in different periods. -->
+
+        <!-- Criminal Identification Using Blockchain
+        University (Final Project)
+        Using Ethereum, Solidity, Python, HTML, CSS and JavaScript
+
+        Automated immigration system used to stop criminals from exiting the country. A complete Ethereum DApp solution
+        with Web UI by HTML and a Python UI for gate control. -->
+        <div class="section">
+            <div class="container mt-5 text-light">
+                <div class="row mt-5">
+                    <div class="col-12">
+                        <div class="row">
+                            <h1 class="pl-3 section-heading"> Projects </h1>
+                            <div class="projects-block">
+                                <ul>
                                     <li>
                                         <h4>
-                                            Bachelors of Engineering <span>(B.E.)</span> <br> Information Technology
+                                            Healthcare Records
                                         </h4>
                                         <p>
-                                            Osmania University
+                                            <i> Training </i>
                                         </p>
                                         <p>
-                                            Hyderabad, India
+                                            <i>Using Java, Spring Boot, Angular 8 amd MySQL</i>
                                         </p>
                                         <p>
-                                            85.89%
+                                            A solution where the admin can upload the patient data and the physician
+                                            details. Others can retrieve the details
+                                            based on patient id.
                                         </p>
                                     </li>
                                     <li>
                                         <h4>
-                                            Intermediate (10 + 2)
+                                            Stock Market Charts
                                         </h4>
                                         <p>
-                                            Telangana Board of Intermediate Education
+                                            <i>Training</i>
                                         </p>
                                         <p>
-                                            Hyderabad, India
+                                            <i>Using Java, Spring Boot, Angular 8 amd MySQL</i>
                                         </p>
                                         <p>
-                                            94.3%
+                                            A portal where the admin can upload the daily stock prices by submitting an
+                                            excel sheet. The user can compare
+                                            the stock prices of different companies or the same company in different
+                                            periods.
                                         </p>
                                     </li>
                                     <li>
                                         <h4>
-                                            10th
+                                            Criminal Identification Using Blockchain
                                         </h4>
                                         <p>
-                                            CBSE
+                                            <i>University (Final Project)</i>
                                         </p>
                                         <p>
-                                            Hyderabad, India
+                                            <i>Using Ethereum, Solidity, Python, HTML, CSS and JavaScript</i>
                                         </p>
                                         <p>
-                                            10 GPA
+                                            Automated immigration system used to stop criminals from exiting the
+                                            country. A complete Ethereum DApp solution
+                                            with Web UI by HTML and a Python UI for gate control.
                                         </p>
                                     </li>
                                 </ul>
@@ -157,54 +286,57 @@
                     </div>
                 </div>
             </div>
-
         </div>
+        <!-- General experience with Git and Maven
+        Have made practise projects on REST using Java and Spring Boot
+        Basic knowledge of caching in Spring using Redis
+        Good knowledge of MySQL database and basic knowlegde of MongoDB
+        Have used JUnit and Mockito (with PowerMock) for unit testing
+        Ability to understand the requirements and prioritize the tasks accordingly
+        Always interested in learning new technologies and trying to do things that are not conventionally done
+        Implemented security using Spring Basic  -->
+
+
         <div class="section">
             <div class="container mt-5 text-light">
                 <div class="row mt-5">
                     <div class="col-12">
                         <div class="row">
-                            <h1 class="pl-3  section-heading"> Skills </h1>
-                            <div class="skills-block">
-                                <table class="mt-5">
-                                    <tbody>
-                                        <tr>
-                                            <td> Programming Languages </td>
-                                            <td> Java </td>
-                                        </tr>
-                                        <tr>
-                                            <td> Java Frameworks </td>
-                                            <td> Spring, Hibernate, Junit, Mockito and PowerMock </td>
-                                        </tr>
-                                        <tr>
-                                            <td> Frontend Technologies </td>
-                                            <td> HTML, CSS and JavaScript </td>
-                                        </tr>
-                                        <tr>
-                                            <td> Database </td>
-                                            <td> MySQL and basic MongoDB </td>
-                                        </tr>
-                                        <tr>
-                                            <td> Frontend Frameworks/Libraries </td>
-                                            <td> Angular 8, Bootstrap 4 </td>
-                                        </tr>
-                                        <tr>
-                                            <td> Tools and IDEs </td>
-                                            <td> Git and Maven, VSCode and Eclipse IDE </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
+                            <h1 class="pl-3 section-heading"> Key Highlights </h1>
+                            <div class="highlights-block">
+                                <ul>
+                                    <li>
+                                        General experience with Git and Maven
+                                    </li>
+                                    <li>
+                                        Have made practise projects on REST using Java and Spring Boot.
+                                    </li>
+                                    <li>
+                                        Basic knowledge of caching in Spring using Redis.
+                                    </li>
+                                    <li>
+                                        Good knowledge of MySQL database and basic knowlegde of MongoDB.
+                                    </li>
+                                    <li>
+                                        Have used JUnit and Mockito (with PowerMock) for unit testing.
+                                    </li>
+                                    <li>
+                                        Ability to understand the requirements and prioritize the tasks accordingly.
+                                    </li>
+                                    <li>
+                                        Always interested in learning new technologies and trying to do things that are
+                                        not conventionally done.
+                                    </li>
+                                    <li>
+                                        Implemented basic security using Spring Security.
+                                    </li>
+                                </ul>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="section">
-            Section 3
-        </div>
-        <div class="section">
-            Section 4
+
         </div>
     </div>
 
