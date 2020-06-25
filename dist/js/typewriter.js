@@ -30,7 +30,7 @@ TypeWriter.prototype.type = function () {
         typeSpeed = 250;
     }
 
-    this.txtElement.innerHTML = `&nbsp<span class="text-cursor">${this.txt}</span>_`;
+    this.txtElement.innerHTML = `<span class="text-cursor">${this.txt}</span>|`;
 
     setTimeout(() => this.type(), typeSpeed)
 }

@@ -61,6 +61,10 @@ body {
 
 .section {
     min-height: 100vh;
+
+    &:nth-child(odd) {
+        background-color: $color-back;
+    }
 }
 
 #mainSection {
@@ -68,10 +72,28 @@ body {
     overflow-x: hidden;
 }
 
-
 //Navbar
 .navbar {
-    background-color: $color-back;
+    max-height: 4rem;
+    padding: 0;
+
+    .navbar-brand {
+        margin: 0.5rem 1rem;
+
+        img {
+            height: 2rem;
+            object-fit: cover;
+        }
+    }
+
+    .navbar-nav {
+        margin: 0.5rem 1rem;
+    }
+
+    .navbar-toggler {
+        margin: 0.5rem 1rem;
+        border: none;
+    }
 
     .nav-item {
         .nav-link {
@@ -91,7 +113,15 @@ body {
     }
 }
 
+@include media-breakpoint-down(sm) {
+    .navbar {
+        background-color: $color-back;
+    }
 
+    .navbar-collapse {
+        background-color: $color-back;
+    }
+}
 
 //Background Animation
 
@@ -264,7 +294,7 @@ body {
         height: 200px;
         width: 200px;
         object-position: top;
-        transform: scale(2.4) translate(-4px);
+        // transform: scale(2.4) translate(-4px);
         image-orientation: 180deg;
     }
 }
@@ -281,22 +311,6 @@ body {
 .typewriter {
     height: 7rem;
 }
-
-.text-gradient {
-    // background: linear-gradient(360deg, rgb(5, 100, 105) 1%, rgba(0, 173, 181, 1) 50%, rgb(143, 13, 86) 65%, rgb(143, 58, 106) 100%);
-    background-clip: text;
-    color: $color-cultured;
-    // animation: text-gradient 20s ease-in-out infinite;
-}
-
-// @include keyframes(text-gradient) {
-//     @for $i from 0 to 101 {
-//         #{$i}% {
-//             background: linear-gradient(360deg / 100 * $i, rgb(5, 100, 105) 1%, rgba(0, 173, 181, 1) 50%, rgb(143, 13, 86) 65%, rgb(143, 58, 106) 100%);
-//             background-clip: text;
-//         }
-//     }
-// }
 
 .quote-box p {
     color: $color-verdigris;
@@ -333,17 +347,230 @@ body {
     }
 }
 
-.academics {
+.section-heading {
+    margin-top: 0.5rem;
+    margin-bottom: 0;
+    display: block;
+}
+
+.journey-block {
+    margin-bottom: 30vh;
+    $line-radius: 20px;
 
     ul {
         list-style: none;
-        max-width: 100%;
-        margin-left: 10rem;
+
+        li {
+            margin-left: auto;
+            position: relative;
+
+            .circles {
+                position: absolute;
+                top: 1.5rem;
+                width: 3rem;
+                height: 3rem;
+                background-color: $color-verdigris;
+                padding: 0.7rem 0;
+                text-align: center;
+                border-radius: 50%;
+                z-index: 2;
+            }
+
+            p {
+                position: relative;
+                margin-bottom: 0;
+                margin-top: 0;
+                min-height: 4rem;
+                padding: 2.3rem 0;
+                background-color: $color-gunmetal;
+            }
+
+            &:nth-child(odd) {
+                text-align: left;
+
+                p {
+                    margin-left: 0rem;
+                    padding-left: 5rem;
+
+                    &::before {
+                        content: "";
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        height: calc(100% + 4px);
+                        // height: 100%;
+                        width: 50%;
+                        border: solid $color-verdigris 4px;
+                        border-right: none;
+                        border-top-left-radius: $line-radius;
+                        border-bottom-left-radius: $line-radius;
+                        margin: 0;
+                        z-index: 1;
+                    }
+                }
+
+
+
+                .circles {
+                    left: -1.4rem;
+                }
+            }
+
+            &:nth-child(even) {
+                text-align: right;
+
+                p {
+                    margin-right: 0rem;
+                    padding-right: 5rem;
+
+                    &::before {
+                        content: "";
+                        position: absolute;
+                        top: 0;
+                        right: 0;
+                        height: calc(100% + 4px);
+                        // height: 100%;
+                        width: 50%;
+                        border: solid $color-verdigris 4px;
+                        border-left: none;
+                        border-top-right-radius: $line-radius;
+                        border-bottom-right-radius: $line-radius;
+                        margin: 0;
+                        z-index: 1;
+                    }
+                }
+
+                .circles {
+                    right: -1.4em;
+                }
+            }
+
+            &:first-child {
+                & p::before {
+                    top: calc(50% + 4px);
+                    height: 50%;
+                    border-top: none;
+                }
+            }
+
+            &:last-child {
+                & p::before {
+                    height: 50%;
+                    border-bottom: none;
+                }
+            }
+
+            .results {
+                .hackerrank-result {
+                    position: relative;
+                    height: 100px;
+                    width: 100px;
+                    background-image: url("../img/results/Hackerrank_93.15.png");
+                    background-size: 100px 100px;
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    padding: 2.3rem 0;
+                    text-align: center;
+                    display: inline-block;
+
+                    &::after {
+                        content: "HackerRank";
+                        position: absolute;
+                        bottom: -2rem;
+                        left: 0;
+                        width: 100%;
+                        text-align: center;
+                    }
+                }
+
+                .project-result {
+                    position: relative;
+                    height: 100px;
+                    width: 100px;
+                    background-image: url("../img/results/Project_90.png");
+                    background-size: 100px 100px;
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    padding: 2.3rem 0;
+                    text-align: center;
+                    display: inline-block;
+
+                    &::after {
+                        content: "Project";
+                        position: absolute;
+                        bottom: -2rem;
+                        left: 0;
+                        width: 100%;
+                        text-align: center;
+                    }
+                }
+
+                .overall-result {
+                    position: relative;
+                    height: 100px;
+                    width: 100px;
+                    background-image: url("../img/results/Overall_91.89.png");
+                    background-size: 100px 100px;
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    padding: 2.3rem 0;
+                    text-align: center;
+                    display: inline-block;
+
+                    &::after {
+                        content: "Overall";
+                        position: absolute;
+                        bottom: -2rem;
+                        left: 0;
+                        width: 100%;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include media-breakpoint-down(md) {
+    .journey-block ul li {
+        &:nth-child(even) {
+            p {
+                margin-right: 3rem;
+            }
+
+            .circles {
+                right: -1.4rem;
+            }
+        }
+
+        &:nth-child(odd) {
+            p {
+                margin-left: 3rem;
+            }
+
+            .circles {
+                left: -1.4rem;
+            }
+        }
+
+        .circles {
+            top: 30%;
+        }
+    }
+}
+
+.academics-block {
+    max-width: 100%;
+    margin-left: 5rem;
+    margin-top: 5vh;
+
+    ul {
+        list-style: none;
 
         li {
             position: relative;
-            max-width: 80%;
-            padding-top: 5vh;
+            max-width: 90%;
+            padding-bottom: 5vh;
 
             h4 {
                 font-size: 1.5rem;
@@ -359,12 +586,12 @@ body {
                 content: "";
                 position: absolute;
                 left: -3rem;
-                top: 3rem;
+                top: 4%;
                 height: 1rem;
                 width: 1rem;
                 border: solid 3px $color-verdigris;
-                border-radius: 50%;
-                background-color: $color-charcoal;
+                border-radius: 20%;
+                background-color: $color-verdigris;
             }
 
             &::after {
@@ -373,26 +600,258 @@ body {
                 left: -2.58rem;
                 border-left: solid 3px $color-verdigris;
                 height: 100%;
-                top: 3.8rem;
+                top: 4%;
             }
 
             &:last-child::after {
                 border: none;
+                padding-bottom: 0;
             }
         }
     }
 }
 
 @include media-breakpoint-down(sm) {
-    .academics {
-        ul {
-            margin-left: 5rem;
 
-            li {
-                h4 {
-                    font-size: 1.3rem;
+    .academics-block {
+
+        li {
+            h4 {
+                font-size: 1.3rem;
+            }
+        }
+    }
+}
+
+.skills-block {
+
+    table tbody {
+        tr td {
+            padding-left: 4rem;
+            line-height: 3rem;
+
+            &:first-child {
+                padding-right: 4rem;
+                border-right: solid $color-verdigris 3px;
+            }
+        }
+    }
+}
+
+@include media-breakpoint-down(sm) {
+    .skills-block {
+
+        table {
+            margin-top: 0;
+
+            tbody tr {
+                padding: 0;
+                margin-bottom: 3rem;
+
+                td {
+                    padding: 0;
+                    padding-left: 2rem;
+                    display: block;
+
+                    &:first-child {
+                        font-weight: bold;
+                        color: $color-verdigris;
+                        border-right: none;
+
+                    }
+
+                    &:last-child {
+                        padding-left: 4rem;
+                        padding-right: 1rem;
+                        padding-bottom: 1.5rem;
+                    }
                 }
             }
         }
+    }
+}
+
+.projects-block {
+    max-width: 100%;
+    margin-left: 10rem;
+    margin-top: 5vh;
+
+    ul {
+        list-style: none;
+
+        li {
+            position: relative;
+            max-width: 80%;
+            padding-bottom: 2rem;
+
+            h4 {
+                font-size: 1.5rem;
+                position: relative;
+            }
+
+            p {
+                line-height: 1.2rem;
+                padding: 0;
+                margin: 0;
+                font-size: 0.8rem;
+
+                &:last-child {
+                    padding-top: 0.3rem;
+                    font-size: 1rem;
+                }
+            }
+
+            &::before {
+                content: "";
+                position: absolute;
+                left: -7rem;
+                top: 4%;
+                height: 4rem;
+                width: 4rem;
+                border: solid 3px $color-verdigris;
+                border-radius: 50%;
+                background-color: $color-back;
+                z-index: 1;
+                background-size: 1.5rem 1.5rem;
+                background-repeat: no-repeat;
+                background-position: center;
+            }
+
+            &::after {
+                content: "";
+                position: absolute;
+                left: -5rem;
+                border-left: solid 3px $color-verdigris;
+                height: 100%;
+                top: 4%;
+                z-index: -1;
+            }
+
+            &:last-child::after {
+                border: none;
+                padding-bottom: 0;
+            }
+
+            &:nth-child(1)::before {
+                background-image: url("../img/projects/patient.png");
+            }
+
+            &:nth-child(2)::before {
+                background-image: url("../img/projects/growth.png");
+            }
+
+            &:nth-child(3)::before {
+                background-image: url("../img/projects/3d.png");
+            }
+        }
+    }
+
+    .screenshot-poi {
+        height: 1rem;
+        width: 1rem;
+        background: url("../img/screenshot.svg");
+        background-size: 1rem 1rem;
+        border: none;
+        cursor: zoom-in;
+    }
+
+
+}
+
+.screenshot {
+    margin-top: 15px;
+    width: 100%;
+
+    img {
+        width: 100%;
+        object-fit: cover;
+        border: solid grey;
+    }
+
+}
+
+.highlights-block {
+    ul {
+        margin-top: 2rem;
+        display: block;
+        list-style-image: url("../img/tick.png");
+        margin-left: 8rem;
+
+        li {
+            line-height: 1rem;
+            padding-top: 1rem;
+            padding-left: 10px;
+        }
+    }
+}
+
+@include media-breakpoint-down(sm) {
+    .highlights-block ul {
+        margin-left: 3rem;
+    }
+}
+
+.contacts-block {
+    .icon-sm {
+        font-size: 1.5rem;
+        width: 2rem;
+
+        &+span {
+            padding-left: 2rem;
+            word-wrap: break-word;
+            max-width: 80vw;
+            text-align: left;
+        }
+    }
+
+    .icon {
+        font-size: 2.5rem;
+        height: 3rem;
+        width: 3rem;
+    }
+
+    a {
+        text-decoration: none;
+        color: $color-cultured;
+    }
+
+    .bl {
+        border-left: 2px solid $color-violetred;
+    }
+}
+
+@include media-breakpoint-down(sm) {
+    .contacts-block {
+        .icon {
+            margin: 0;
+            font-size: 5rem;
+            height: 6rem;
+            width: 6rem;
+            margin-top: 2rem;
+        }
+
+        .bl {
+            margin-top: 4rem;
+            margin-left: auto;
+            margin-right: auto;
+            width: 80vw;
+            border: none;
+            border-top: 2px solid $color-violetred;
+        }
+    }
+
+    .allow-scroll {
+        overflow: scroll;
+    }
+}
+
+.attributions {
+    font-size: 0.5rem;
+    color: grey;
+
+    a {
+        text-decoration: none;
+        color: grey;
+        text-decoration: dotted underline;
     }
 }

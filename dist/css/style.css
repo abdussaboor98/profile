@@ -9538,13 +9538,37 @@ body {
   min-height: 100vh;
 }
 
+.section:nth-child(odd) {
+  background-color: #111;
+}
+
 #mainSection {
   background-color: #111;
   overflow-x: hidden;
 }
 
 .navbar {
-  background-color: #111;
+  max-height: 4rem;
+  padding: 0;
+}
+
+.navbar .navbar-brand {
+  margin: 0.5rem 1rem;
+}
+
+.navbar .navbar-brand img {
+  height: 2rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.navbar .navbar-nav {
+  margin: 0.5rem 1rem;
+}
+
+.navbar .navbar-toggler {
+  margin: 0.5rem 1rem;
+  border: none;
 }
 
 .navbar .nav-item .nav-link:hover {
@@ -9557,6 +9581,15 @@ body {
 
 .navbar .active > .nav-link {
   color: #B91372 !important;
+}
+
+@media (max-width: 767.98px) {
+  .navbar {
+    background-color: #111;
+  }
+  .navbar-collapse {
+    background-color: #111;
+  }
 }
 
 .background-animation {
@@ -10374,8 +10407,6 @@ body {
   width: 200px;
   -o-object-position: top;
      object-position: top;
-  -webkit-transform: scale(2.4) translate(-4px);
-          transform: scale(2.4) translate(-4px);
   image-orientation: 180deg;
 }
 
@@ -10390,11 +10421,6 @@ body {
 
 .typewriter {
   height: 7rem;
-}
-
-.text-gradient {
-  background-clip: text;
-  color: #EEEEEE;
 }
 
 .quote-box p {
@@ -10430,58 +10456,463 @@ body {
   z-index: -1;
 }
 
-.academics ul {
+.section-heading {
+  margin-top: 0.5rem;
+  margin-bottom: 0;
+  display: block;
+}
+
+.journey-block {
+  margin-bottom: 30vh;
+}
+
+.journey-block ul {
   list-style: none;
-  max-width: 100%;
-  margin-left: 10rem;
 }
 
-.academics ul li {
+.journey-block ul li {
+  margin-left: auto;
   position: relative;
-  max-width: 80%;
-  padding-top: 5vh;
 }
 
-.academics ul li h4 {
+.journey-block ul li .circles {
+  position: absolute;
+  top: 1.5rem;
+  width: 3rem;
+  height: 3rem;
+  background-color: #00ADB5;
+  padding: 0.7rem 0;
+  text-align: center;
+  border-radius: 50%;
+  z-index: 2;
+}
+
+.journey-block ul li p {
+  position: relative;
+  margin-bottom: 0;
+  margin-top: 0;
+  min-height: 4rem;
+  padding: 2.3rem 0;
+  background-color: #222831;
+}
+
+.journey-block ul li:nth-child(odd) {
+  text-align: left;
+}
+
+.journey-block ul li:nth-child(odd) p {
+  margin-left: 0rem;
+  padding-left: 5rem;
+}
+
+.journey-block ul li:nth-child(odd) p::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: calc(100% + 4px);
+  width: 50%;
+  border: solid #00ADB5 4px;
+  border-right: none;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  margin: 0;
+  z-index: 1;
+}
+
+.journey-block ul li:nth-child(odd) .circles {
+  left: -1.4rem;
+}
+
+.journey-block ul li:nth-child(even) {
+  text-align: right;
+}
+
+.journey-block ul li:nth-child(even) p {
+  margin-right: 0rem;
+  padding-right: 5rem;
+}
+
+.journey-block ul li:nth-child(even) p::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: calc(100% + 4px);
+  width: 50%;
+  border: solid #00ADB5 4px;
+  border-left: none;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  margin: 0;
+  z-index: 1;
+}
+
+.journey-block ul li:nth-child(even) .circles {
+  right: -1.4em;
+}
+
+.journey-block ul li:first-child p::before {
+  top: calc(50% + 4px);
+  height: 50%;
+  border-top: none;
+}
+
+.journey-block ul li:last-child p::before {
+  height: 50%;
+  border-bottom: none;
+}
+
+.journey-block ul li .results .hackerrank-result {
+  position: relative;
+  height: 100px;
+  width: 100px;
+  background-image: url("../img/results/Hackerrank_93.15.png");
+  background-size: 100px 100px;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 2.3rem 0;
+  text-align: center;
+  display: inline-block;
+}
+
+.journey-block ul li .results .hackerrank-result::after {
+  content: "HackerRank";
+  position: absolute;
+  bottom: -2rem;
+  left: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.journey-block ul li .results .project-result {
+  position: relative;
+  height: 100px;
+  width: 100px;
+  background-image: url("../img/results/Project_90.png");
+  background-size: 100px 100px;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 2.3rem 0;
+  text-align: center;
+  display: inline-block;
+}
+
+.journey-block ul li .results .project-result::after {
+  content: "Project";
+  position: absolute;
+  bottom: -2rem;
+  left: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.journey-block ul li .results .overall-result {
+  position: relative;
+  height: 100px;
+  width: 100px;
+  background-image: url("../img/results/Overall_91.89.png");
+  background-size: 100px 100px;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 2.3rem 0;
+  text-align: center;
+  display: inline-block;
+}
+
+.journey-block ul li .results .overall-result::after {
+  content: "Overall";
+  position: absolute;
+  bottom: -2rem;
+  left: 0;
+  width: 100%;
+  text-align: center;
+}
+
+@media (max-width: 991.98px) {
+  .journey-block ul li:nth-child(even) p {
+    margin-right: 3rem;
+  }
+  .journey-block ul li:nth-child(even) .circles {
+    right: -1.4rem;
+  }
+  .journey-block ul li:nth-child(odd) p {
+    margin-left: 3rem;
+  }
+  .journey-block ul li:nth-child(odd) .circles {
+    left: -1.4rem;
+  }
+  .journey-block ul li .circles {
+    top: 30%;
+  }
+}
+
+.academics-block {
+  max-width: 100%;
+  margin-left: 5rem;
+  margin-top: 5vh;
+}
+
+.academics-block ul {
+  list-style: none;
+}
+
+.academics-block ul li {
+  position: relative;
+  max-width: 90%;
+  padding-bottom: 5vh;
+}
+
+.academics-block ul li h4 {
   font-size: 1.5rem;
 }
 
-.academics ul li p {
+.academics-block ul li p {
   line-height: 1rem;
   margin-bottom: 0.5rem;
 }
 
-.academics ul li::before {
+.academics-block ul li::before {
   content: "";
   position: absolute;
   left: -3rem;
-  top: 3rem;
+  top: 4%;
   height: 1rem;
   width: 1rem;
   border: solid 3px #00ADB5;
-  border-radius: 50%;
-  background-color: #393E46;
+  border-radius: 20%;
+  background-color: #00ADB5;
 }
 
-.academics ul li::after {
+.academics-block ul li::after {
   content: "";
   position: absolute;
   left: -2.58rem;
   border-left: solid 3px #00ADB5;
   height: 100%;
-  top: 3.8rem;
+  top: 4%;
 }
 
-.academics ul li:last-child::after {
+.academics-block ul li:last-child::after {
   border: none;
+  padding-bottom: 0;
 }
 
 @media (max-width: 767.98px) {
-  .academics ul {
-    margin-left: 5rem;
-  }
-  .academics ul li h4 {
+  .academics-block li h4 {
     font-size: 1.3rem;
   }
+}
+
+.skills-block table tbody tr td {
+  padding-left: 4rem;
+  line-height: 3rem;
+}
+
+.skills-block table tbody tr td:first-child {
+  padding-right: 4rem;
+  border-right: solid #00ADB5 3px;
+}
+
+@media (max-width: 767.98px) {
+  .skills-block table {
+    margin-top: 0;
+  }
+  .skills-block table tbody tr {
+    padding: 0;
+    margin-bottom: 3rem;
+  }
+  .skills-block table tbody tr td {
+    padding: 0;
+    padding-left: 2rem;
+    display: block;
+  }
+  .skills-block table tbody tr td:first-child {
+    font-weight: bold;
+    color: #00ADB5;
+    border-right: none;
+  }
+  .skills-block table tbody tr td:last-child {
+    padding-left: 4rem;
+    padding-right: 1rem;
+    padding-bottom: 1.5rem;
+  }
+}
+
+.projects-block {
+  max-width: 100%;
+  margin-left: 10rem;
+  margin-top: 5vh;
+}
+
+.projects-block ul {
+  list-style: none;
+}
+
+.projects-block ul li {
+  position: relative;
+  max-width: 80%;
+  padding-bottom: 2rem;
+}
+
+.projects-block ul li h4 {
+  font-size: 1.5rem;
+  position: relative;
+}
+
+.projects-block ul li p {
+  line-height: 1.2rem;
+  padding: 0;
+  margin: 0;
+  font-size: 0.8rem;
+}
+
+.projects-block ul li p:last-child {
+  padding-top: 0.3rem;
+  font-size: 1rem;
+}
+
+.projects-block ul li::before {
+  content: "";
+  position: absolute;
+  left: -7rem;
+  top: 4%;
+  height: 4rem;
+  width: 4rem;
+  border: solid 3px #00ADB5;
+  border-radius: 50%;
+  background-color: #111;
+  z-index: 1;
+  background-size: 1.5rem 1.5rem;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.projects-block ul li::after {
+  content: "";
+  position: absolute;
+  left: -5rem;
+  border-left: solid 3px #00ADB5;
+  height: 100%;
+  top: 4%;
+  z-index: -1;
+}
+
+.projects-block ul li:last-child::after {
+  border: none;
+  padding-bottom: 0;
+}
+
+.projects-block ul li:nth-child(1)::before {
+  background-image: url("../img/projects/patient.png");
+}
+
+.projects-block ul li:nth-child(2)::before {
+  background-image: url("../img/projects/growth.png");
+}
+
+.projects-block ul li:nth-child(3)::before {
+  background-image: url("../img/projects/3d.png");
+}
+
+.projects-block .screenshot-poi {
+  height: 1rem;
+  width: 1rem;
+  background: url("../img/screenshot.svg");
+  background-size: 1rem 1rem;
+  border: none;
+  cursor: -webkit-zoom-in;
+  cursor: zoom-in;
+}
+
+.screenshot {
+  margin-top: 15px;
+  width: 100%;
+}
+
+.screenshot img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border: solid grey;
+}
+
+.highlights-block ul {
+  margin-top: 2rem;
+  display: block;
+  list-style-image: url("../img/tick.png");
+  margin-left: 8rem;
+}
+
+.highlights-block ul li {
+  line-height: 1rem;
+  padding-top: 1rem;
+  padding-left: 10px;
+}
+
+@media (max-width: 767.98px) {
+  .highlights-block ul {
+    margin-left: 3rem;
+  }
+}
+
+.contacts-block .icon-sm {
+  font-size: 1.5rem;
+  width: 2rem;
+}
+
+.contacts-block .icon-sm + span {
+  padding-left: 2rem;
+  word-wrap: break-word;
+  max-width: 80vw;
+  text-align: left;
+}
+
+.contacts-block .icon {
+  font-size: 2.5rem;
+  height: 3rem;
+  width: 3rem;
+}
+
+.contacts-block a {
+  text-decoration: none;
+  color: #EEEEEE;
+}
+
+.contacts-block .bl {
+  border-left: 2px solid #B91372;
+}
+
+@media (max-width: 767.98px) {
+  .contacts-block .icon {
+    margin: 0;
+    font-size: 5rem;
+    height: 6rem;
+    width: 6rem;
+    margin-top: 2rem;
+  }
+  .contacts-block .bl {
+    margin-top: 4rem;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80vw;
+    border: none;
+    border-top: 2px solid #B91372;
+  }
+  .allow-scroll {
+    overflow: scroll;
+  }
+}
+
+.attributions {
+  font-size: 0.5rem;
+  color: grey;
+}
+
+.attributions a {
+  text-decoration: none;
+  color: grey;
+  -webkit-text-decoration: dotted underline;
+          text-decoration: dotted underline;
 }
 /*# sourceMappingURL=style.css.map */
