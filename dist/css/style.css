@@ -9562,6 +9562,10 @@ body {
      object-fit: cover;
 }
 
+.navbar .navbar-nav {
+  margin: 0.5rem 1rem;
+}
+
 .navbar .navbar-toggler {
   margin: 0.5rem 1rem;
   border: none;
@@ -10461,7 +10465,7 @@ body {
 }
 
 .journey-block {
-  margin-bottom: 10rem;
+  margin-bottom: 30vh;
 }
 
 .journey-block ul {
@@ -10559,6 +10563,72 @@ body {
 .journey-block ul li:last-child p::before {
   height: 50%;
   border-bottom: none;
+}
+
+.journey-block ul li .results .hackerrank-result {
+  position: relative;
+  height: 100px;
+  width: 100px;
+  background-image: url("../img/results/Hackerrank_93.15.png");
+  background-size: 100px 100px;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 2.3rem 0;
+  text-align: center;
+  display: inline-block;
+}
+
+.journey-block ul li .results .hackerrank-result::after {
+  content: "HackerRank";
+  position: absolute;
+  bottom: -2rem;
+  left: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.journey-block ul li .results .project-result {
+  position: relative;
+  height: 100px;
+  width: 100px;
+  background-image: url("../img/results/Project_90.png");
+  background-size: 100px 100px;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 2.3rem 0;
+  text-align: center;
+  display: inline-block;
+}
+
+.journey-block ul li .results .project-result::after {
+  content: "Project";
+  position: absolute;
+  bottom: -2rem;
+  left: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.journey-block ul li .results .overall-result {
+  position: relative;
+  height: 100px;
+  width: 100px;
+  background-image: url("../img/results/Overall_91.89.png");
+  background-size: 100px 100px;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 2.3rem 0;
+  text-align: center;
+  display: inline-block;
+}
+
+.journey-block ul li .results .overall-result::after {
+  content: "Overall";
+  position: absolute;
+  bottom: -2rem;
+  left: 0;
+  width: 100%;
+  text-align: center;
 }
 
 @media (max-width: 991.98px) {
@@ -10713,7 +10783,7 @@ body {
   width: 4rem;
   border: solid 3px #00ADB5;
   border-radius: 50%;
-  background-color: #222831;
+  background-color: #111;
   z-index: 1;
   background-size: 1.5rem 1.5rem;
   background-repeat: no-repeat;
@@ -10786,5 +10856,65 @@ body {
   .highlights-block ul {
     margin-left: 3rem;
   }
+}
+
+.contacts-block .icon-sm {
+  font-size: 1.5rem;
+  width: 2rem;
+}
+
+.contacts-block .icon-sm + span {
+  padding-left: 2rem;
+  word-wrap: break-word;
+  max-width: 80vw;
+  text-align: left;
+}
+
+.contacts-block .icon {
+  font-size: 2.5rem;
+  height: 3rem;
+  width: 3rem;
+}
+
+.contacts-block a {
+  text-decoration: none;
+  color: #EEEEEE;
+}
+
+.contacts-block .bl {
+  border-left: 2px solid #B91372;
+}
+
+@media (max-width: 767.98px) {
+  .contacts-block .icon {
+    margin: 0;
+    font-size: 5rem;
+    height: 6rem;
+    width: 6rem;
+    margin-top: 2rem;
+  }
+  .contacts-block .bl {
+    margin-top: 4rem;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80vw;
+    border: none;
+    border-top: 2px solid #B91372;
+  }
+  .allow-scroll {
+    overflow: scroll;
+  }
+}
+
+.attributions {
+  font-size: 0.5rem;
+  color: grey;
+}
+
+.attributions a {
+  text-decoration: none;
+  color: grey;
+  -webkit-text-decoration: dotted underline;
+          text-decoration: dotted underline;
 }
 /*# sourceMappingURL=style.css.map */

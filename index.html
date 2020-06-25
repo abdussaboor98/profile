@@ -29,25 +29,28 @@
             <!-- <span class="navbar-toggler-icon"></span> -->
             <i class="fas fa-chevron-down p-2" id="icon"></i>
         </button>
-        <div class="collapse navbar-collapse text-center" id="navbarNav">
-            <ul class="navbar-nav ml-auto" id="menu">
+        <div class="collapse navbar-collapse text-right" id="navbarNav">
+            <ul class="navbar-nav ml-auto pr-3" id="menu">
                 <li class="nav-item active" data-menuanchor="about">
                     <a class="nav-link" href="#about"> About </a>
                 </li>
-                <li class="nav-item" data-menuanchor="Journey">
-                    <a class="nav-link" href="#journey"> Academics </a>
-                </li>
-                <li class="nav-item" data-menuanchor="academics">
-                    <a class="nav-link" href="#academics"> Academics </a>
-                </li>
-                <li class="nav-item" data-menuanchor="skills">
-                    <a class="nav-link" href="#skills"> Skills </a>
+                <li class="nav-item" data-menuanchor="journey">
+                    <a class="nav-link" href="#journey"> Journey </a>
                 </li>
                 <li class="nav-item" data-menuanchor="projects">
                     <a class="nav-link" href="#projects"> Projects </a>
                 </li>
+                <li class="nav-item" data-menuanchor="skills">
+                    <a class="nav-link" href="#skills"> Skills </a>
+                </li>
                 <li class="nav-item" data-menuanchor="highlights">
                     <a class="nav-link" href="#highlights"> Key Highlights </a>
+                </li>
+                <li class="nav-item" data-menuanchor="academics">
+                    <a class="nav-link" href="#academics"> Academics </a>
+                </li>
+                <li class="nav-item" data-menuanchor="contact">
+                    <a class="nav-link" href="#contact"> Contact </a>
                 </li>
             </ul>
         </div>
@@ -107,6 +110,7 @@
                 </div>
             </div>
         </div>
+
         <div class="section">
             <div class="container mt-5 text-light">
                 <div class="row mt-5">
@@ -161,11 +165,21 @@
                                     </p>
                                 </li>
                                 <li>
-
                                     <p>
                                         <span class="circles">7</span>
                                         Gave the CDERank exam and secured 91.89%.
                                     </p>
+                                    <div class="results row">
+                                        <div class="hackerrank-result col-4 col-md-4">
+                                            93.15
+                                        </div>
+                                        <div class="project-result col-4 col-md-4">
+                                            90
+                                        </div>
+                                        <div class="overall-result col-4 col-md-4">
+                                            91.89
+                                        </div>
+                                    </div>
                                 </li>
                             </ul>
                         </div>
@@ -173,7 +187,179 @@
                 </div>
             </div>
         </div>
+
+        <div class="section scroll-active">
+            <div class="container mt-5 text-light">
+                <div class="row mt-5">
+                    <div class="col-12">
+                        <div class="row">
+                            <h1 class="pl-3 section-heading"> Projects </h1>
+                            <div class="projects-block">
+                                <ul>
+                                    <li>
+                                        <h4>
+                                            Healthcare Records
+                                            <button class="screenshot-poi" data-toggle="modal"
+                                                data-target="#healthcare-ss"></button>
+                                        </h4>
+                                        <p>
+                                            <i> Training </i>
+                                        </p>
+                                        <p>
+                                            <i>Using Java, Spring Boot, Angular 8 amd
+                                                MySQL</i>
+                                        </p>
+                                        <p>
+                                            A solution where the admin can upload the
+                                            patient data and the physician
+                                            details. Others can retrieve the details
+                                            based on patient id.
+                                        </p>
+
+                                    </li>
+                                    <li>
+                                        <h4>
+                                            Stock Market Charts
+                                            <button class="screenshot-poi" data-toggle="modal"
+                                                data-target="#stock-ss"></button>
+                                        </h4>
+                                        <p>
+                                            <i>Training</i>
+                                        </p>
+                                        <p>
+                                            <i>Using Java, Spring Boot, Angular 8 amd
+                                                MySQL</i>
+                                        </p>
+                                        <p>
+                                            A portal where the admin can upload the
+                                            daily stock prices by submitting an
+                                            excel sheet. The user can compare
+                                            the stock prices of different companies or
+                                            the same company in different
+                                            periods.
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <h4>
+                                            Criminal Identification Using Blockchain
+                                            <button class="screenshot-poi" data-toggle="modal"
+                                                data-target="#bc-ss"></button>
+                                        </h4>
+                                        <p>
+                                            <i>University (Final Project)</i>
+                                        </p>
+                                        <p>
+                                            <i>Using Ethereum, Solidity, Python, HTML,
+                                                CSS and JavaScript</i>
+                                        </p>
+                                        <p>
+                                            Automated immigration system used to stop
+                                            criminals from exiting the
+                                            country. A complete Ethereum DApp solution
+                                            with Web UI by HTML and a Python UI for gate
+                                            control.
+                                        </p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <div class="section">
+            <div class="container mt-5 text-light">
+                <div class="row mt-5">
+                    <div class="col-12">
+                        <div class="row">
+                            <h1 class="pl-3  section-heading"> Skills </h1>
+                        </div>
+                        <div class="skills-block">
+                            <table class="mt-5">
+                                <tbody>
+                                    <tr>
+                                        <td> Programming Languages </td>
+                                        <td> Java </td>
+                                    </tr>
+                                    <tr>
+                                        <td> Java Frameworks </td>
+                                        <td> Spring, Hibernate, Junit, Mockito and
+                                            PowerMock </td>
+                                    </tr>
+                                    <tr>
+                                        <td> Frontend Technologies </td>
+                                        <td> HTML, CSS and JavaScript </td>
+                                    </tr>
+                                    <tr>
+                                        <td> Database </td>
+                                        <td> MySQL and basic MongoDB </td>
+                                    </tr>
+                                    <tr>
+                                        <td> Frontend Frameworks/Libraries </td>
+                                        <td> Angular 8, Bootstrap 4 </td>
+                                    </tr>
+                                    <tr>
+                                        <td> Tools and IDEs </td>
+                                        <td> Git and Maven, VSCode and Eclipse IDE </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="container mt-5 text-light">
+                <div class="row mt-5">
+                    <div class="col-12">
+                        <div class="row">
+                            <h1 class="pl-3 section-heading"> Key Highlights </h1>
+                            <div class="highlights-block">
+                                <ul>
+                                    <li>
+                                        General experience with Git and Maven
+                                    </li>
+                                    <li>
+                                        Have made practise projects on REST using Java
+                                        and Spring Boot.
+                                    </li>
+                                    <li>
+                                        Basic knowledge of caching in Spring using
+                                        Redis.
+                                    </li>
+                                    <li>
+                                        Good knowledge of MySQL database and basic
+                                        knowlegde of MongoDB.
+                                    </li>
+                                    <li>
+                                        Have used JUnit and Mockito (with PowerMock) for
+                                        unit testing.
+                                    </li>
+                                    <li>
+                                        Ability to understand the requirements and
+                                        prioritize the tasks accordingly.
+                                    </li>
+                                    <li>
+                                        Always interested in learning new technologies
+                                        and trying to do things that are
+                                        not conventionally done.
+                                    </li>
+                                    <li>
+                                        Implemented basic security using Spring
+                                        Security.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class=" section">
             <div class="container mt-5 text-light">
                 <div class="row mt-5">
                     <div class="col-12">
@@ -184,7 +370,8 @@
                             <ul>
                                 <li>
                                     <h4>
-                                        Bachelors of Engineering <span>(B.E.)</span> <br> Information Technology
+                                        Bachelors of Engineering <span>(B.E.)</span>
+                                        <br> Information Technology
                                     </h4>
                                     <p>
                                         Osmania University
@@ -230,190 +417,89 @@
                 </div>
             </div>
         </div>
-        <div class="section">
-            <div class="container mt-5 text-light">
-                <div class="row mt-5">
-                    <div class="col-12">
-                        <div class="row">
-                            <h1 class="pl-3  section-heading"> Skills </h1>
-                        </div>
-                        <div class="skills-block">
-                            <table class="mt-5">
-                                <tbody>
-                                    <tr>
-                                        <td> Programming Languages </td>
-                                        <td> Java </td>
-                                    </tr>
-                                    <tr>
-                                        <td> Java Frameworks </td>
-                                        <td> Spring, Hibernate, Junit, Mockito and PowerMock </td>
-                                    </tr>
-                                    <tr>
-                                        <td> Frontend Technologies </td>
-                                        <td> HTML, CSS and JavaScript </td>
-                                    </tr>
-                                    <tr>
-                                        <td> Database </td>
-                                        <td> MySQL and basic MongoDB </td>
-                                    </tr>
-                                    <tr>
-                                        <td> Frontend Frameworks/Libraries </td>
-                                        <td> Angular 8, Bootstrap 4 </td>
-                                    </tr>
-                                    <tr>
-                                        <td> Tools and IDEs </td>
-                                        <td> Git and Maven, VSCode and Eclipse IDE </td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-        <!-- Healthcare Records
-        Training
-        Using Java, Spring Boot, Angular 8 amd MySQL
-
-         A portal where the admin can upload the patient data and the physician details. Others can retrieve the details
-        based on patient id. -->
-
-        <!-- Stock Market Charts
-        Training
-        Using Java, Spring Boot, Angular 8 amd MySQL
-         
-        A portal where the admin can upload the daily stock prices by submitting an excel sheet. The user can compare
-        the stock prices of different companies or the same company in different periods. -->
-
-        <!-- Criminal Identification Using Blockchain
-        University (Final Project)
-        Using Ethereum, Solidity, Python, HTML, CSS and JavaScript
-
-        Automated immigration system used to stop criminals from exiting the country. A complete Ethereum DApp solution
-        with Web UI by HTML and a Python UI for gate control. -->
-        <div class="section scroll-active">
-            <div class="container mt-5 text-light">
-                <div class="row mt-5">
-                    <div class="col-12">
-                        <div class="row">
-                            <h1 class="pl-3 section-heading"> Projects </h1>
-                            <div class="projects-block">
-                                <ul>
-                                    <li>
-                                        <h4>
-                                            Healthcare Records
-                                            <button class="screenshot-poi" data-toggle="modal"
-                                                data-target="#healthcare-ss"></button>
-                                        </h4>
-                                        <p>
-                                            <i> Training </i>
-                                        </p>
-                                        <p>
-                                            <i>Using Java, Spring Boot, Angular 8 amd MySQL</i>
-                                        </p>
-                                        <p>
-                                            A solution where the admin can upload the patient data and the physician
-                                            details. Others can retrieve the details
-                                            based on patient id.
-                                        </p>
-
-                                    </li>
-                                    <li>
-                                        <h4>
-                                            Stock Market Charts
-                                            <button class="screenshot-poi" data-toggle="modal"
-                                                data-target="#stock-ss"></button>
-                                        </h4>
-                                        <p>
-                                            <i>Training</i>
-                                        </p>
-                                        <p>
-                                            <i>Using Java, Spring Boot, Angular 8 amd MySQL</i>
-                                        </p>
-                                        <p>
-                                            A portal where the admin can upload the daily stock prices by submitting an
-                                            excel sheet. The user can compare
-                                            the stock prices of different companies or the same company in different
-                                            periods.
-                                        </p>
-                                    </li>
-                                    <li>
-                                        <h4>
-                                            Criminal Identification Using Blockchain
-                                            <button class="screenshot-poi" data-toggle="modal"
-                                                data-target="#bc-ss"></button>
-                                        </h4>
-                                        <p>
-                                            <i>University (Final Project)</i>
-                                        </p>
-                                        <p>
-                                            <i>Using Ethereum, Solidity, Python, HTML, CSS and JavaScript</i>
-                                        </p>
-                                        <p>
-                                            Automated immigration system used to stop criminals from exiting the
-                                            country. A complete Ethereum DApp solution
-                                            with Web UI by HTML and a Python UI for gate control.
-                                        </p>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- General experience with Git and Maven
-        Have made practise projects on REST using Java and Spring Boot
-        Basic knowledge of caching in Spring using Redis
-        Good knowledge of MySQL database and basic knowlegde of MongoDB
-        Have used JUnit and Mockito (with PowerMock) for unit testing
-        Ability to understand the requirements and prioritize the tasks accordingly
-        Always interested in learning new technologies and trying to do things that are not conventionally done
-        Implemented security using Spring Basic  -->
-
 
         <div class="section">
             <div class="container mt-5 text-light">
                 <div class="row mt-5">
                     <div class="col-12">
                         <div class="row">
-                            <h1 class="pl-3 section-heading"> Key Highlights </h1>
-                            <div class="highlights-block">
-                                <ul>
-                                    <li>
-                                        General experience with Git and Maven
-                                    </li>
-                                    <li>
-                                        Have made practise projects on REST using Java and Spring Boot.
-                                    </li>
-                                    <li>
-                                        Basic knowledge of caching in Spring using Redis.
-                                    </li>
-                                    <li>
-                                        Good knowledge of MySQL database and basic knowlegde of MongoDB.
-                                    </li>
-                                    <li>
-                                        Have used JUnit and Mockito (with PowerMock) for unit testing.
-                                    </li>
-                                    <li>
-                                        Ability to understand the requirements and prioritize the tasks accordingly.
-                                    </li>
-                                    <li>
-                                        Always interested in learning new technologies and trying to do things that are
-                                        not conventionally done.
-                                    </li>
-                                    <li>
-                                        Implemented basic security using Spring Security.
-                                    </li>
-                                </ul>
+                            <h1 class="pl-3 section-heading"> Contact / Links </h1>
+                        </div>
+                        <div class="contacts-block">
+                            <div class="row text-center mt-5">
+                                <div class="col-md-6">
+                                    <div class="row">
+                                        <i class="fas fa-mobile icon-sm ml-2"></i>
+                                        <span>+91 8919372849</span>
+                                    </div>
+                                    <div class="row mt-3">
+                                        <i class="fas fa-at icon-sm   ml-2"></i>
+                                        <span>gaffari98@gmail.com</span>
+                                    </div>
+                                    <div class="row mt-3">
+                                        <i class="fas fa-briefcase icon-sm  ml-2 allow-scroll"></i>
+                                        <span>abdussaboorgaffari.mohammed@cognizant.com</span>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 bl">
+                                    <div class="row text-center">
+                                        <div class="col-md-6">
+                                            <a target="_blank" href="https://github.com/abdussaboor98"> <i
+                                                    class="fab fa-github icon" title="GitHub"> </i></a>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <a target="_blank" href="https://www.linkedin.com/in/abdussaboorgaffari/"
+                                                title="LinkedIn"> <i class="fab fa-linkedin icon"> </i></a>
+                                        </div>
+                                    </div>
+                                    <div class="row text-center">
+                                        <div class="col-md-6">
+                                            <a target="_blank" href="https://www.instagram.com/abdussaboor98/"
+                                                title="Instagram"> <i class="fab fa-instagram icon mt-md-5">
+                                                </i></a>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <a target="_blank" href="https://twitter.com/abdussaboor98" title="Twitter">
+                                                <i class="fab fa-twitter icon mt-md-5">
+                                                </i></a>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
+                            <div class="row text-center mt-5">
+                                <div class="col-12">
+                                    This website is made using:
+                                    <i class="fab fa-html5 icon-sm" data-toggle="popover" data-content="HTML5"
+                                        data-trigger="hover" data-placement="bottom"></i>
+                                    <i class="fab fa-css3 icon-sm" data-toggle="popover" data-content="CSS3"
+                                        data-trigger="hover" data-placement="bottom"></i>
+                                    <i class="fab fa-js icon-sm" data-toggle="popover" data-content="JavaScript"
+                                        data-trigger="hover" data-placement="bottom"></i>
+                                    <i class="fab fa-bootstrap icon-sm" data-toggle="popover" data-content="Bootstrap"
+                                        data-trigger="hover" data-placement="bottom"></i>
+                                    <i class="fab fa-font-awesome icon-sm" data-toggle="popover"
+                                        data-content="Fontawesome" data-trigger="hover" data-placement="bottom"></i> and
+                                    <i>fullpage.js</i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text-left mt-5 attributions">
+                            Icons made by
+                            <a href="https://www.flaticon.com/authors/prettycons" target="_blank"
+                                title="prettycons">prettycons</a>,
+                            <a href="https://www.flaticon.com/authors/kiranshastry" target="_blank"
+                                title="Kiranshastry">Kiranshastry</a>,
+                            <a href="https://www.flaticon.com/authors/eucalyp" target="_blank"
+                                title="Eucalyp">Eucalyp</a>
+                            from
+                            <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>
                         </div>
                     </div>
                 </div>
             </div>
 
         </div>
+    </div>
 
 
     </div>

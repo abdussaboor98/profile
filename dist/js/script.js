@@ -4,6 +4,10 @@ $(".navbar-toggler").click(function () {
 })
 
 $(function () {
+    $('[data-toggle="popover"]').popover()
+})
+
+$(function () {
     $('.healthcare-sc').popover({
         container: 'body',
         placement: 'left',
@@ -16,3 +20,4 @@ $(function () {
         trigger: 'focus'
     })
 })
+
