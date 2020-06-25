@@ -10407,8 +10407,6 @@ body {
   width: 200px;
   -o-object-position: top;
      object-position: top;
-  -webkit-transform: scale(2.4) translate(-4px);
-          transform: scale(2.4) translate(-4px);
   image-orientation: 180deg;
 }
 
