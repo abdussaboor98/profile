@@ -3,9 +3,10 @@ const fp = new fullpage('#fullpage', {
     scrollHorizontally: true,
     bigSectionsDestination: 'top',
     menu: '#menu',
-    anchors: ['about', 'academics', 'skills', 'projects', 'highlights'],
+    anchors: ['about', 'journey', 'projects', 'skills', 'highlights', 'academics', 'contact'],
     scrollOverflow: true,
     scrollOverflowReset: true,
+    normalScrollElements: ".allow-scroll"
 });
 
 

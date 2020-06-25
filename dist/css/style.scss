@@ -86,6 +86,10 @@ body {
         }
     }
 
+    .navbar-nav {
+        margin: 0.5rem 1rem;
+    }
+
     .navbar-toggler {
         margin: 0.5rem 1rem;
         border: none;
@@ -350,7 +354,7 @@ body {
 }
 
 .journey-block {
-    margin-bottom: 10rem;
+    margin-bottom: 30vh;
     $line-radius: 20px;
 
     ul {
@@ -453,6 +457,74 @@ body {
                 & p::before {
                     height: 50%;
                     border-bottom: none;
+                }
+            }
+
+            .results {
+                .hackerrank-result {
+                    position: relative;
+                    height: 100px;
+                    width: 100px;
+                    background-image: url("../img/results/Hackerrank_93.15.png");
+                    background-size: 100px 100px;
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    padding: 2.3rem 0;
+                    text-align: center;
+                    display: inline-block;
+
+                    &::after {
+                        content: "HackerRank";
+                        position: absolute;
+                        bottom: -2rem;
+                        left: 0;
+                        width: 100%;
+                        text-align: center;
+                    }
+                }
+
+                .project-result {
+                    position: relative;
+                    height: 100px;
+                    width: 100px;
+                    background-image: url("../img/results/Project_90.png");
+                    background-size: 100px 100px;
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    padding: 2.3rem 0;
+                    text-align: center;
+                    display: inline-block;
+
+                    &::after {
+                        content: "Project";
+                        position: absolute;
+                        bottom: -2rem;
+                        left: 0;
+                        width: 100%;
+                        text-align: center;
+                    }
+                }
+
+                .overall-result {
+                    position: relative;
+                    height: 100px;
+                    width: 100px;
+                    background-image: url("../img/results/Overall_91.89.png");
+                    background-size: 100px 100px;
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    padding: 2.3rem 0;
+                    text-align: center;
+                    display: inline-block;
+
+                    &::after {
+                        content: "Overall";
+                        position: absolute;
+                        bottom: -2rem;
+                        left: 0;
+                        width: 100%;
+                        text-align: center;
+                    }
                 }
             }
         }
@@ -638,7 +710,7 @@ body {
                 width: 4rem;
                 border: solid 3px $color-verdigris;
                 border-radius: 50%;
-                background-color: $color-gunmetal;
+                background-color: $color-back;
                 z-index: 1;
                 background-size: 1.5rem 1.5rem;
                 background-repeat: no-repeat;
@@ -716,5 +788,70 @@ body {
 @include media-breakpoint-down(sm) {
     .highlights-block ul {
         margin-left: 3rem;
+    }
+}
+
+.contacts-block {
+    .icon-sm {
+        font-size: 1.5rem;
+        width: 2rem;
+
+        &+span {
+            padding-left: 2rem;
+            word-wrap: break-word;
+            max-width: 80vw;
+            text-align: left;
+        }
+    }
+
+    .icon {
+        font-size: 2.5rem;
+        height: 3rem;
+        width: 3rem;
+    }
+
+    a {
+        text-decoration: none;
+        color: $color-cultured;
+    }
+
+    .bl {
+        border-left: 2px solid $color-violetred;
+    }
+}
+
+@include media-breakpoint-down(sm) {
+    .contacts-block {
+        .icon {
+            margin: 0;
+            font-size: 5rem;
+            height: 6rem;
+            width: 6rem;
+            margin-top: 2rem;
+        }
+
+        .bl {
+            margin-top: 4rem;
+            margin-left: auto;
+            margin-right: auto;
+            width: 80vw;
+            border: none;
+            border-top: 2px solid $color-violetred;
+        }
+    }
+
+    .allow-scroll {
+        overflow: scroll;
+    }
+}
+
+.attributions {
+    font-size: 0.5rem;
+    color: grey;
+
+    a {
+        text-decoration: none;
+        color: grey;
+        text-decoration: dotted underline;
     }
 }
