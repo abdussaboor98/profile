@@ -9538,7 +9538,7 @@ body {
   min-height: 100vh;
 }
 
-.section:nth-child(odd) {
+.section:nth-child(even) {
   background-color: #111;
 }
 
@@ -9595,19 +9595,22 @@ body {
 .background-animation {
   position: absolute;
   width: 100%;
-  height: 100%;
-  overflow-y: hidden;
+  height: 100vh;
+  overflow-y: visible;
   padding: 0;
   bottom: 0;
+  margin: 0;
+  background-color: #111;
 }
 
 .background-animation .circles {
   position: absolute;
-  top: 0;
+  bottom: 0;
   left: 0;
   width: 100%;
   height: 100%;
   overflow: hidden;
+  margin: 0;
 }
 
 .background-animation .circles li {
@@ -10460,10 +10463,6 @@ body {
   margin-top: 0.5rem;
   margin-bottom: 0;
   display: block;
-}
-
-.journey-block {
-  margin-bottom: 30vh;
 }
 
 .journey-block ul {
