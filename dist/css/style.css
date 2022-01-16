@@ -9517,11 +9517,11 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 .text-light {
-  color: #EEEEEE !important;
+  color: #eeeeee !important;
 }
 
 * {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   margin: 0;
   padding: 0;
 }
@@ -9531,7 +9531,7 @@ body {
 }
 
 .poppins-font {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 .section {
@@ -9576,11 +9576,11 @@ body {
 }
 
 .navbar .nav-item .nav-link:active {
-  color: #00ADB5;
+  color: #00adb5;
 }
 
 .navbar .active > .nav-link {
-  color: #B91372 !important;
+  color: #b91372 !important;
 }
 
 @media (max-width: 767.98px) {
@@ -10427,7 +10427,7 @@ body {
 }
 
 .quote-box p {
-  color: #00ADB5;
+  color: #00adb5;
   font-size: 1.2rem;
   position: relative;
   -webkit-box-sizing: content-box;
@@ -10437,14 +10437,14 @@ body {
 }
 
 .quote-box p::before {
-  font-family: 'Poppins';
+  font-family: "Poppins";
   content: open-quote;
   position: absolute;
   left: -30px;
   top: -60px;
   font-size: 7rem;
-  font-family: 'Palanquin', sans-serif;
-  color: #B91372;
+  font-family: "Palanquin", sans-serif;
+  color: #b91372;
   z-index: -1;
 }
 
@@ -10454,8 +10454,8 @@ body {
   right: 15px;
   bottom: -70px;
   font-size: 5rem;
-  font-family: 'Palanquin', sans-serif;
-  color: #B91372;
+  font-family: "Palanquin", sans-serif;
+  color: #b91372;
   z-index: -1;
 }
 
@@ -10479,7 +10479,7 @@ body {
   top: 1.5rem;
   width: 3rem;
   height: 3rem;
-  background-color: #00ADB5;
+  background-color: #00adb5;
   padding: 0.7rem 0;
   text-align: center;
   border-radius: 50%;
@@ -10511,7 +10511,7 @@ body {
   left: 0;
   height: calc(100% + 4px);
   width: 50%;
-  border: solid #00ADB5 4px;
+  border: solid #00adb5 4px;
   border-right: none;
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
@@ -10539,7 +10539,7 @@ body {
   right: 0;
   height: calc(100% + 4px);
   width: 50%;
-  border: solid #00ADB5 4px;
+  border: solid #00adb5 4px;
   border-left: none;
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
@@ -10678,16 +10678,16 @@ body {
   top: 4%;
   height: 1rem;
   width: 1rem;
-  border: solid 3px #00ADB5;
+  border: solid 3px #00adb5;
   border-radius: 20%;
-  background-color: #00ADB5;
+  background-color: #00adb5;
 }
 
 .academics-block ul li::after {
   content: "";
   position: absolute;
   left: -2.58rem;
-  border-left: solid 3px #00ADB5;
+  border-left: solid 3px #00adb5;
   height: 100%;
   top: 4%;
 }
@@ -10710,7 +10710,7 @@ body {
 
 .skills-block table tbody tr td:first-child {
   padding-right: 4rem;
-  border-right: solid #00ADB5 3px;
+  border-right: solid #00adb5 3px;
 }
 
 @media (max-width: 767.98px) {
@@ -10728,7 +10728,7 @@ body {
   }
   .skills-block table tbody tr td:first-child {
     font-weight: bold;
-    color: #00ADB5;
+    color: #00adb5;
     border-right: none;
   }
   .skills-block table tbody tr td:last-child {
@@ -10778,7 +10778,7 @@ body {
   top: 4%;
   height: 4rem;
   width: 4rem;
-  border: solid 3px #00ADB5;
+  border: solid 3px #00adb5;
   border-radius: 50%;
   background-color: #111;
   z-index: 1;
@@ -10791,7 +10791,7 @@ body {
   content: "";
   position: absolute;
   left: -5rem;
-  border-left: solid 3px #00ADB5;
+  border-left: solid 3px #00adb5;
   height: 100%;
   top: 4%;
   z-index: -1;
@@ -10803,14 +10803,18 @@ body {
 }
 
 .projects-block ul li:nth-child(1)::before {
-  background-image: url("../img/projects/patient.png");
+  background-image: url("../img/projects/bird.png");
 }
 
 .projects-block ul li:nth-child(2)::before {
-  background-image: url("../img/projects/growth.png");
+  background-image: url("../img/projects/patient.png");
 }
 
 .projects-block ul li:nth-child(3)::before {
+  background-image: url("../img/projects/growth.png");
+}
+
+.projects-block ul li:nth-child(4)::before {
   background-image: url("../img/projects/3d.png");
 }
 
@@ -10875,11 +10879,11 @@ body {
 
 .contacts-block a {
   text-decoration: none;
-  color: #EEEEEE;
+  color: #eeeeee;
 }
 
 .contacts-block .bl {
-  border-left: 2px solid #B91372;
+  border-left: 2px solid #b91372;
 }
 
 @media (max-width: 767.98px) {
@@ -10896,7 +10900,7 @@ body {
     margin-right: auto;
     width: 80vw;
     border: none;
-    border-top: 2px solid #B91372;
+    border-top: 2px solid #b91372;
   }
   .allow-scroll {
     overflow: scroll;
