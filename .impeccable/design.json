@@ -1,0 +1,319 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-03T11:33:25.769441+00:00",
+  "title": "Design System: Abdus Saboor \u2014 Person-First Portfolio",
+  "extensions": {
+    "colorMeta": {
+      "paper": {
+        "role": "neutral",
+        "displayName": "Soft White",
+        "canonical": "#FAFCF9",
+        "tonalRamp": [
+          "oklch(15% 0.03 145)",
+          "oklch(25% 0.03 145)",
+          "oklch(35% 0.03 145)",
+          "oklch(45% 0.03 145)",
+          "oklch(55% 0.03 145)",
+          "oklch(65% 0.03 145)",
+          "oklch(80% 0.03 145)",
+          "oklch(95% 0.03 145)"
+        ]
+      },
+      "sage": {
+        "role": "neutral",
+        "displayName": "Sage Field",
+        "canonical": "#EFF5EC",
+        "tonalRamp": [
+          "oklch(15% 0.04 135)",
+          "oklch(25% 0.04 135)",
+          "oklch(35% 0.04 135)",
+          "oklch(45% 0.04 135)",
+          "oklch(55% 0.04 135)",
+          "oklch(65% 0.04 135)",
+          "oklch(80% 0.04 135)",
+          "oklch(95% 0.04 135)"
+        ]
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "Ink",
+        "canonical": "#202B23",
+        "tonalRamp": [
+          "oklch(15% 0.04 145)",
+          "oklch(25% 0.04 145)",
+          "oklch(35% 0.04 145)",
+          "oklch(45% 0.04 145)",
+          "oklch(55% 0.04 145)",
+          "oklch(65% 0.04 145)",
+          "oklch(80% 0.04 145)",
+          "oklch(95% 0.04 145)"
+        ]
+      },
+      "muted": {
+        "role": "neutral",
+        "displayName": "Muted Sage",
+        "canonical": "#526255",
+        "tonalRamp": [
+          "oklch(15% 0.04 140)",
+          "oklch(25% 0.04 140)",
+          "oklch(35% 0.04 140)",
+          "oklch(45% 0.04 140)",
+          "oklch(55% 0.04 140)",
+          "oklch(65% 0.04 140)",
+          "oklch(80% 0.04 140)",
+          "oklch(95% 0.04 140)"
+        ]
+      },
+      "green": {
+        "role": "primary",
+        "displayName": "Forest Green",
+        "canonical": "#166534",
+        "tonalRamp": [
+          "oklch(15% 0.09 145)",
+          "oklch(25% 0.09 145)",
+          "oklch(35% 0.09 145)",
+          "oklch(45% 0.09 145)",
+          "oklch(55% 0.09 145)",
+          "oklch(65% 0.09 145)",
+          "oklch(80% 0.09 145)",
+          "oklch(95% 0.09 145)"
+        ]
+      },
+      "forest": {
+        "role": "primary",
+        "displayName": "Deep Forest",
+        "canonical": "#14532D",
+        "tonalRamp": [
+          "oklch(15% 0.10 145)",
+          "oklch(25% 0.10 145)",
+          "oklch(35% 0.10 145)",
+          "oklch(45% 0.10 145)",
+          "oklch(55% 0.10 145)",
+          "oklch(65% 0.10 145)",
+          "oklch(80% 0.10 145)",
+          "oklch(95% 0.10 145)"
+        ]
+      },
+      "tag": {
+        "role": "tertiary",
+        "displayName": "Pale Green",
+        "canonical": "#E3EFDE",
+        "tonalRamp": [
+          "oklch(15% 0.05 130)",
+          "oklch(25% 0.05 130)",
+          "oklch(35% 0.05 130)",
+          "oklch(45% 0.05 130)",
+          "oklch(55% 0.05 130)",
+          "oklch(65% 0.05 130)",
+          "oklch(80% 0.05 130)",
+          "oklch(95% 0.05 130)"
+        ]
+      },
+      "line": {
+        "role": "neutral",
+        "displayName": "Sage Rule",
+        "canonical": "#D4E1CF",
+        "tonalRamp": [
+          "oklch(15% 0.02 130)",
+          "oklch(25% 0.02 130)",
+          "oklch(35% 0.02 130)",
+          "oklch(45% 0.02 130)",
+          "oklch(55% 0.02 130)",
+          "oklch(65% 0.02 130)",
+          "oklch(80% 0.02 130)",
+          "oklch(95% 0.02 130)"
+        ]
+      },
+      "scrollbar": {
+        "role": "neutral",
+        "displayName": "Scrollbar Sage",
+        "canonical": "#8CA585",
+        "tonalRamp": [
+          "oklch(15% 0.05 135)",
+          "oklch(25% 0.05 135)",
+          "oklch(35% 0.05 135)",
+          "oklch(45% 0.05 135)",
+          "oklch(55% 0.05 135)",
+          "oklch(65% 0.05 135)",
+          "oklch(80% 0.05 135)",
+          "oklch(95% 0.05 135)"
+        ]
+      },
+      "white": {
+        "role": "neutral",
+        "displayName": "White",
+        "canonical": "#FFFFFF",
+        "tonalRamp": [
+          "oklch(15% 0 0)",
+          "oklch(25% 0 0)",
+          "oklch(35% 0 0)",
+          "oklch(45% 0 0)",
+          "oklch(55% 0 0)",
+          "oklch(65% 0 0)",
+          "oklch(80% 0 0)",
+          "oklch(95% 0 0)"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Greeting Display",
+        "purpose": "The large first-viewport greeting."
+      },
+      "headline": {
+        "displayName": "Section Headline",
+        "purpose": "Named homepage section headings."
+      },
+      "title": {
+        "displayName": "Content Title",
+        "purpose": "Experience, education, and project titles."
+      },
+      "lead": {
+        "displayName": "Career Lead",
+        "purpose": "The short career framing beneath the greeting."
+      },
+      "body": {
+        "displayName": "Reading Body",
+        "purpose": "Summaries and longer explanatory copy."
+      },
+      "navigation": {
+        "displayName": "Navigation Utility",
+        "purpose": "Sticky header destinations."
+      },
+      "utility": {
+        "displayName": "Action Utility",
+        "purpose": "Project action links."
+      },
+      "label": {
+        "displayName": "Metadata Label",
+        "purpose": "Technology tags and compact metadata."
+      },
+      "button": {
+        "displayName": "Hero Action",
+        "purpose": "Hero buttons; 0.88rem desktop and 0.82rem mobile."
+      }
+    },
+    "shadows": [],
+    "motion": [
+      {
+        "name": "button-background",
+        "value": "180ms ease-out",
+        "purpose": "Primary and secondary button background state changes."
+      },
+      {
+        "name": "portrait-offset",
+        "value": "220ms cubic-bezier(0.16, 1, 0.3, 1)",
+        "purpose": "Returns the portrait frame smoothly after a fine-pointer interaction."
+      },
+      {
+        "name": "reduced-motion",
+        "value": "animation: none; transition: none; scroll-behavior: auto",
+        "purpose": "Removes transitions and smooth scrolling for reduced-motion preferences."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "frame",
+        "value": "1100px"
+      },
+      {
+        "name": "menu",
+        "value": "900px"
+      },
+      {
+        "name": "mobile",
+        "value": "640px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Site Navigation",
+      "kind": "nav",
+      "refersTo": "navigation",
+      "description": "Sticky paper-backed wordmark and anchor destinations with a mobile menu translation.",
+      "html": "<header class=\"ds-site-nav\"><a class=\"ds-wordmark\" href=\"#about\">Abdus Saboor<span aria-hidden=\"true\">.</span></a><nav aria-label=\"Main navigation\"><a href=\"#about\">About</a><a href=\"#experience\">Experience</a><a href=\"#research\">Research</a><a href=\"#contact\">Contact</a></nav></header>",
+      "css": ".ds-site-nav { min-height: 88px; display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid var(--line); gap: 24px; background: var(--paper); } .ds-wordmark { color: var(--ink); font: 800 1.2rem/1.75 'Manrope Variable', sans-serif; letter-spacing: -.04em; text-decoration: none; } .ds-wordmark span { color: var(--green); } .ds-site-nav nav { display: flex; gap: 26px; font: 650 .82rem/1.75 'Manrope Variable', sans-serif; } .ds-site-nav nav a { color: var(--muted); text-decoration: none; } .ds-site-nav nav a:hover, .ds-site-nav nav a[aria-current] { color: var(--green); text-decoration: underline; text-decoration-thickness: 2px; text-underline-offset: 8px; } .ds-site-nav a:focus-visible { outline: 3px solid var(--green); outline-offset: 5px; }"
+    },
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "The main project or contact action.",
+      "html": "<a class=\"ds-button-primary\" href=\"#research\">Explore my projects</a>",
+      "css": ".ds-button-primary { display: inline-flex; align-items: center; justify-content: center; min-height: 48px; padding: 12px 20px; border-radius: 8px; background: var(--green); color: var(--white, #fff); font: 700 .88rem/1.75 'Manrope Variable', sans-serif; text-decoration: none; transition: background-color 180ms ease-out; } .ds-button-primary:hover { background: var(--forest); color: var(--white, #fff); } .ds-button-primary:focus-visible { outline: 3px solid var(--green); outline-offset: 5px; }"
+    },
+    {
+      "name": "Secondary Button",
+      "kind": "button",
+      "refersTo": "button-secondary",
+      "description": "A quiet outlined action beside the primary project action.",
+      "html": "<a class=\"ds-button-secondary\" href=\"#contact\">Get in touch</a>",
+      "css": ".ds-button-secondary { display: inline-flex; align-items: center; justify-content: center; min-height: 48px; padding: 12px 20px; border: 1px solid var(--line); border-radius: 8px; background: var(--paper); color: var(--green); font: 700 .88rem/1.75 'Manrope Variable', sans-serif; text-decoration: none; transition: background-color 180ms ease-out; } .ds-button-secondary:hover { background: var(--sage); color: var(--green); } .ds-button-secondary:focus-visible { outline: 3px solid var(--green); outline-offset: 5px; }"
+    },
+    {
+      "name": "Technology Tag",
+      "kind": "chip",
+      "refersTo": "tag",
+      "description": "An informational technology or skill label on experience and project entries.",
+      "html": "<span class=\"ds-tag\">Applied ML</span>",
+      "css": ".ds-tag { display: inline-block; padding: 4px 10px; border-radius: 5px; background: var(--tag); color: var(--forest); font: 600 .73rem/1.7 'Manrope Variable', sans-serif; }"
+    },
+    {
+      "name": "Project Panel",
+      "kind": "card",
+      "refersTo": "project-panel",
+      "description": "A compact bordered project entry with a status and optional action link.",
+      "html": "<article class=\"ds-project-panel\"><h3>Target-speaker keyword spotting</h3><p class=\"ds-project-summary\">A compact applied machine learning project summary.</p><div class=\"ds-tags\"><span class=\"ds-tag\">TinyML</span><span class=\"ds-tag\">Arduino</span></div><p class=\"ds-project-status\">Academic team project \u00b7 Unpublished</p><a class=\"ds-project-link\" href=\"#project\">View project</a></article>",
+      "css": ".ds-project-panel { display: flex; flex-direction: column; padding: 29px; border: 1px solid var(--line); border-radius: 12px; background: var(--paper); color: var(--ink); } .ds-project-panel h3 { margin: 0; color: var(--ink); font: 750 1.22rem/1.45 'Manrope Variable', sans-serif; letter-spacing: -.02em; } .ds-project-summary { margin: 14px 0 0; color: var(--muted); font: 400 .94rem/1.8 'Manrope Variable', sans-serif; } .ds-tags { display: flex; flex-wrap: wrap; gap: 7px; margin-top: 22px; } .ds-project-status { margin-top: auto; padding-top: 24px; color: var(--muted); font: 400 .74rem/1.8 'Manrope Variable', sans-serif; } .ds-project-link { align-self: flex-start; margin-top: 14px; color: var(--green); font: 700 .82rem/1.75 'Manrope Variable', sans-serif; text-decoration: none; } .ds-project-link:hover { color: var(--forest); text-decoration: underline; } .ds-project-link:focus-visible { outline: 3px solid var(--green); outline-offset: 5px; }"
+    },
+    {
+      "name": "Portrait Frame",
+      "kind": "custom",
+      "refersTo": "portrait-frame",
+      "description": "The supplied portrait with a restrained green offset frame that responds only to fine pointers and motion-enabled users.",
+      "html": "<div class=\"ds-portrait-frame\"><img src=\"/images/portrait.webp\" alt=\"Abdus Saboor\" width=\"204\" height=\"240\"></div>",
+      "css": ".ds-portrait-frame { position: relative; isolation: isolate; width: 204px; } .ds-portrait-frame::before { content: ''; position: absolute; inset: -13px 13px 13px -13px; z-index: -1; border: 1px solid var(--green); border-radius: 90px 90px 16px 16px; } .ds-portrait-frame img { display: block; width: 204px; height: 240px; object-fit: cover; border-radius: 90px 90px 16px 16px; }"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Person-First Green Portfolio",
+    "overview": "This is a light, approachable portfolio that introduces Abdus before asking the reader to scan his work. Soft white and sage fields keep the page calm, while forest green marks actions, active destinations, status, and the restrained frame around the portrait. The visual voice is carried by Manrope at different weights and sizes, so the page stays personal and practical without changing type families.\n\nThe homepage uses explicit section names, a clean career timeline, and compact project panels. A sticky header, normal document scrolling, and short action paths keep contact easy to find. The supplied portrait and Jisr screenshot remain real portfolio assets with their provenance sidecars; the implementation does not introduce speculative visual assets or generated imagery.",
+    "keyCharacteristics": [
+      "Soft white and sage surfaces with forest-green action signals.",
+      "Manrope Variable used consistently for greeting, headings, body copy, metadata, and controls.",
+      "Lightly bordered project panels and a vertical experience timeline support quick scanning.",
+      "One restrained portrait-frame pointer offset, inactive for touch and reduced motion."
+    ],
+    "rules": [
+      {
+        "name": "The Green Signal Rule",
+        "body": "Use green for a reader action, active destination, status, focus ring, or the portrait frame; use sage and paper for broad fields.",
+        "section": "colors"
+      },
+      {
+        "name": "The Single Voice Rule",
+        "body": "Keep Manrope throughout the surface; distinguish roles with the observed weight, size, line-height, and tracking values.",
+        "section": "typography"
+      },
+      {
+        "name": "The Layered Paper Rule",
+        "body": "Establish separation with paper, sage, borders, and alignment before introducing any shadow or decorative depth.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "Do use the paper/sage/forest palette and the exact Manrope roles recorded here.",
+      "Do keep About, Experience, Research, Software, Education, and Contact plainly named and easy to reach.",
+      "Do use compact, lightly bordered project panels with supported tags and factual status/contribution wording.",
+      "Do preserve the 1100px, 900px, and 640px responsive translations, normal scrolling, visible focus, and reduced-motion behavior.",
+      "Do retain the supplied portrait and Jisr raster assets with their provenance sidecars when changing imagery."
+    ],
+    "donts": [
+      "Don't reintroduce the superseded color system, serif display typography, page-specific route architecture, speculative visual assets, or a different runtime and interaction model.",
+      "Don't turn the project sequence into a shadow-heavy or highly ornamental card system.",
+      "Don't make the portrait pointer offset active for touch or reduced-motion users.",
+      "Don't add generated imagery, private PDFs, or unsupported project claims to the visual system."
+    ]
+  }
+}

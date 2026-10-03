@@ -1,0 +1,6 @@
+/references
+/node_modules/
+/build/
+/.astro/
+/.impeccable/review/
+/.impeccable/hook.cache.json
